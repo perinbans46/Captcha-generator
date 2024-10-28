@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #55BAB9, #19978F);
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.captcha-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px dashed #55BAB9;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.captcha-box span {
+    font-weight: bold;
+    color: #19978F;
+    letter-spacing: 3px;
+}
+
+.regenerate-button {
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.regenerate-button:hover {
+    color: #19978F;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #55BAB9;
+}
+
+button {
+    padding: 10px;
+    background-color: #55BAB9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #19978F;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.options label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#resultMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
